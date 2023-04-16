@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .outercont{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+            /* background-color: rgb(200, 130, 130); */
+        }
+        .fail-div{
+            width: 40%;
+            height: 80%;
+            position:absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 12px;
+            background-color: white;
+            color: red;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            margin-top: 50px;
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+            border-radius: 12px;
+            border: none;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="outercont">
+        <div class="fail-div">
+            <h1>Try again!</h1>
+            <button onclick="document.location='sellerpage.html'">Go back </button>
+        </div>
+    </div>
+</body>
+</html>

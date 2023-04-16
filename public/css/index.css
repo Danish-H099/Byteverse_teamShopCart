@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.App{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* -----------------Page1-------------- */
+.Page1,.Page2,.Page3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-image: url("./bgimg.jpeg"); */
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    margin: 0;
+}
+.cont1,.cont2,.cont3{
+    width: 40%;
+    height: 80%;
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .cart-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: fixed;
+    top:100px;
+}
+.cart-img img{
+    width: 100%;
+} */
+input,button{
+    display: block;
+    width: 400px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+input{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+button:hover{
+    cursor: pointer;
+
+}
+.btn:hover{
+    width: 420px;
+    height: 66px;
+    font-size: 21px;
+}
+
+
+/* --------------Page2-------------- */
+.signup-link{
+    position:absolute;
+    bottom:100px;
+    right: 110px; 
+    font-size: 22px;
+}
+.signup-link a{
+    text-decoration: none;
+
+}
+.signin-btn:hover{
+    background-color: rgb(185, 192, 198);
+}
+/* -------------Page3------------- */
+.Page3 input,.Page3 button{
+    width: 300px;
+    height: 50px;
+}
+
+/* ----------Sellerinterface----------- */
+
+.seller{
+    width: 100%;
+    height: 100vh;
+
+}
+.seller-cont{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    /* border: 1px solid black; */
+    padding: 12px;
+}
+
+.header{
+    font-size: 22px;
+    font-weight: 200;
+    /* text-align: right; */
+    margin:12px;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 60px;
+    height: 60px;
+}
+.avatar img{
+    width: 100%;
+}
+.seller-cont ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.seller-cont ul li,.upload{
+
+    width: 265px;
+    height: 350px;
+    list-style: none;
+    padding: 8px;
+    margin: 10px 7px 0;
+    /* border: 1px solid red; */
+    background-color: rgb(217, 222, 227);
+    border-radius: 8px;
+
+}
+.seller-cont ul li img{
+    width: 100%;
+    height: 85%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.upload{
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .upload .text{
+    transition: 0.5s;
+
+}
+.upload .text:hover{
+    transform: rotate(90deg);
+} */
+.upload:hover{
+    cursor: pointer;
+}
+
+
